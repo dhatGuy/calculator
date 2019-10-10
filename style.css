@@ -32,18 +32,23 @@ html {
 
 .screen{
     height: 80px;
-    width: 285px;
-    margin: 5px auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5px;
+    width: 96.5%;
+    margin: 10px 5px 10px 5px;
+    text-align: right;
     font-size: 4rem;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #252525;
     color: #fff;
     overflow: hidden;
     border: none;
+    user-select: text;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .keys{
@@ -59,8 +64,12 @@ html {
     background-color: yellow;
 }
 
-.equal{
-    background-color: rgb(245, 63, 63);
+.copyright{
+    text-align: right;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    font-family: cursive;
 }
 
 .keys > div{
@@ -73,6 +82,11 @@ html {
     cursor: pointer;
     position: relative;
     user-select: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .keys > div:hover{
@@ -84,6 +98,7 @@ html {
 }
 
 .equal{
+    background-color: rgb(245, 63, 63);
     grid-row: 4 / span 2;
     grid-column: 4 / 5; 
 }

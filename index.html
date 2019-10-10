@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+    <title>Online Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="screen">0</div>
         <div class="keys">
-            <div class="clear" id="clear">AC</div>
+            <div class="remove" id="delete" title="clear entry">CE</div>
             <div class="divide operator" id="/">&divide;</div>
             <div class="multiply operator" id="*">x</div>
-            <div class="mod operator" id="%">mod</div>
+            <div class="mod operator" id="%" title="modulus">mod</div>
             <div class="number seven">7</div>
             <div class="eight number">8</div>
             <div class="nine number">9</div>
@@ -27,10 +27,11 @@
             <div class="two number">2</div>
             <div class="three number">3</div>
             <div class="equal" id="=">&equals;</div>
-            <div class="remove" id="delete">CE</div>
+            <div class="clear" id="clear" title="all clear">AC</div>
             <div class="zero number" >0</div>
             <div class="point" id="decimal">.</div>
         </div>
+        <div class="copyright">&copy; dhatGuy</div>
     </div>
     <script src="script.js"></script>
 </body>
