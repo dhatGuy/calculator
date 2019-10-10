@@ -5,32 +5,64 @@ body{
     align-items: center;
 }
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
 .container{
     border: 1px solid #000;
-    height: 315px;
     width: 300px;
     display: flex;
     flex-direction: column;
+    margin: 50px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .screen{
-    border: 1px solid #000;
-    height: 40px;
+    height: 80px;
     width: 285px;
     margin: 5px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+    font-size: 4rem;
+    box-sizing: border-box;
+    background-color: #252525;
+    color: #fff;
+    overflow: hidden;
+    border: none;
 }
 
-.operators{
+.keys{
     display: grid;
-    grid-template: repeat(4, 50px)/ repeat(4, 1fr);
+    grid-template: repeat(5, 60px)/ repeat(4, 1fr);
     gap: 1px;
     justify-content: center;
-    /* border: 1px solid rgb(0, 0, 0); */
-    margin: 0 6px;
-    height: 254px;
+    margin: 0 6px 5px;
+    margin-bottom: 5px;
 }
 
-.operators > div{
+.operator{
+    background-color: yellow;
+}
+
+.equal{
+    background-color: rgb(245, 63, 63);
+}
+
+.keys > div{
     border: 1px solid rgb(236, 230, 230);
     text-align: center;
     display: grid;
@@ -42,11 +74,11 @@ body{
     user-select: none;
 }
 
-.operators > div:hover{
+.keys > div:hover{
     background-color: darkgrey;
 }
 
-.operators > div:active{
+.keys > div:active{
     top: 3px;
 }
 
